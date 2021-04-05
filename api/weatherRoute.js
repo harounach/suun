@@ -20,15 +20,4 @@ router.route("/").post(async (req, res) => {
   }
 });
 
-// ENDPOINT: /weather/city
-router.route("/city").get(async (req, res) => {
-  try {
-    const response = await weatherAPI.getCityCoordniates("London");
-    console.log(response.data);
-    res.json(response.data);
-  } catch (error) {
-    res.json(error);
-  }
-});
-
 module.exports = router;
