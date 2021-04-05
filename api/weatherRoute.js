@@ -13,7 +13,7 @@ router.route("/").post(async (req, res) => {
   const { city } = req.body;
   try {
     const response = await weatherAPI.fetchWeatherData(city);
-    console.log(city);
+
     res.json(response);
   } catch (error) {
     res.json(error);
