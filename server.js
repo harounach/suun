@@ -5,9 +5,10 @@ const app = express();
 // server port
 const PORT = 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello, World!");
-});
+// Apply middlewares
+app.use(express.static(__dirname + "/public"));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 // start listening to incoming request
 app.listen(process.env.PORT || PORT, () => {
