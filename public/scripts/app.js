@@ -48,6 +48,10 @@ window.addEventListener("DOMContentLoaded", () => {
     chooseImage: function (main) {
       return model.imagesMap[main];
     },
+
+    formatDegrees: function (degree) {
+      return Math.round(degree);
+    },
   };
 
   // View
@@ -67,15 +71,18 @@ window.addEventListener("DOMContentLoaded", () => {
       this.populateToday(current);
 
       // populate days
-      this.days.forEach((day) => {
-        day.getElementsByClassName("day__name")[0].textContent = 55;
-      });
+      // this.days.forEach((day) => {
+      //   day.getElementsByClassName("day__name")[0].textContent = 55;
+      // });
     },
     showError: function () {},
     populateToday: function (current) {
-      const imageUrl = controller.chooseImage("Clouds");
+      const main = current["weather"][0]["main"];
+      const imageUrl = controller.chooseImage(main);
       this.todayImage.src = imageUrl;
-      this.todayDegrees.textContent = `${current["temp"]}°`;
+
+      const formattedDegree = controller.formatDegrees(current["temp"]);
+      this.todayDegrees.textContent = `${formattedDegree}°`;
     },
   };
 
