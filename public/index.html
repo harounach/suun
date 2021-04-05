@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Suun Front End</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="appbar">
+        <div class="appbar__section appbar__section--center">
+          <!-- logo -->
+          <a class="logo" href="./index.html"
+            ><img class="logo__img" src="./images/App-Icon.svg" alt="" />
+          </a>
+          <!-- app name -->
+          <span class="appbar__app-name">Suun</span>
+        </div>
+
+        <div class="appbar__section">
+          <!-- search -->
+          <form class="search-form">
+            <div class="search-form__section search-form__section--m1">
+              <input
+                class="search-form__input-control"
+                id="search"
+                type="text"
+                name="search"
+                placeholder="Search city .e.g: London"
+              />
+            </div>
+
+            <div class="search-form__section">
+              <button class="btn btn--search btn--rounded" type="submit">
+                <svg
+                  class="btn__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="black"
+                  width="24px"
+                  height="24px"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </header>
+      <main class="main">
+        <div class="today-section">
+          <div class="city">
+            <h1 class="city__name">London</h1>
+            <p class="city__error">Choose location</p>
+          </div>
+          <div class="today">
+            <div class="today__img-wrapper">
+              <img src="./images/Sunny.svg" alt="Sunny" class="today__img" />
+            </div>
+            <div class="today__text">
+              <h3 class="today__day">Today</h3>
+              <h2 class="today__degrees">22°</h2>
+            </div>
+          </div>
+        </div>
+        <div class="days-section">
+          <!-- Week forecast -->
+          <div class="days">
+            <!-- 1 -->
+            <div class="day">
+              <h4 class="day__name">Tue</h4>
+              <div class="day__img-wrapper">
+                <img src="./images/Rain.svg" alt="" class="day__img" />
+              </div>
+              <h3 class="day__degrees">10°</h3>
+            </div>
+
+            <!-- 2 -->
+            <div class="day">
+              <h4 class="day__name">Wed</h4>
+              <div class="day__img-wrapper">
+                <img src="./images/Shower.svg" alt="" class="day__img" />
+              </div>
+              <h3 class="day__degrees">14°</h3>
+            </div>
+
+            <!-- 3 -->
+            <div class="day">
+              <h4 class="day__name">Thu</h4>
+              <div class="day__img-wrapper">
+                <img src="./images/Snow.svg" alt="" class="day__img" />
+              </div>
+              <h3 class="day__degrees">2°</h3>
+            </div>
+
+            <!-- 4 -->
+            <div class="day">
+              <h4 class="day__name">Fri</h4>
+              <div class="day__img-wrapper">
+                <img src="./images/Thunder.svg" alt="" class="day__img" />
+              </div>
+              <h3 class="day__degrees">14°</h3>
+            </div>
+
+            <!-- 5 -->
+            <div class="day">
+              <h4 class="day__name">Sat</h4>
+              <div class="day__img-wrapper">
+                <img src="./images/Thunderstorm.svg" alt="" class="day__img" />
+              </div>
+              <h3 class="day__degrees">8°</h3>
+            </div>
+
+            <!-- 6 -->
+            <div class="day">
+              <h4 class="day__name">Sun</h4>
+              <div class="day__img-wrapper">
+                <img src="./images/Sunny.svg" alt="" class="day__img" />
+              </div>
+              <h3 class="day__degrees">22°</h3>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p class="copyright-notice">Copyright Haroun Ach 2021</p>
+      </footer>
+    </div>
+  </body>
+</html>

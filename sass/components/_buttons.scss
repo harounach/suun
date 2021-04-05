@@ -1,0 +1,77 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.btn {
+  height: 2.25rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: variables.$primary-color;
+  color: variables.$on-primary-color;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  // box-shadow
+  @include mixins.btn-shadow;
+
+  &:hover {
+    @include mixins.btn-hover-shadow;
+  }
+
+  &:active {
+    @include mixins.btn-hover-shadow;
+  }
+
+  &:focus {
+    @include mixins.btn-hover-shadow;
+  }
+
+  // btn--36px
+  &--36 {
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+  }
+
+  // btn--40px
+  &--40 {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+  }
+
+  // btn--48px
+  &--48 {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+  }
+
+  // btn--search
+  &--search {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+
+  // btn--outline
+  &--rounded {
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  //btn__icon
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: variables.$on-primary-color;
+  }
+}

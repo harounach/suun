@@ -1,0 +1,51 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Snow">
+<g id="Cloud">
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M0 129H191.956C191.957 128.977 191.956 128.953 191.956 128.93C191.956 91.9654 161.991 62 125.027 62C100.441 62 78.951 75.2568 67.3155 95.0122C60.4296 90.3881 52.1419 87.6901 43.2241 87.6901C19.9842 87.6901 1.02364 106.013 0 129Z" fill="#C2C2C2"/>
+</g>
+<g id="snowflakes">
+<g id="snowflake">
+<rect id="snowflake-part1" x="39" y="144" width="2" height="16" rx="1" fill="#ABC1DB"/>
+<rect id="snowflake-part2" x="45.3137" y="146" width="2" height="16" rx="1" transform="rotate(45 45.3137 146)" fill="#ABC1DB"/>
+<rect id="snowflake-part4" x="34" y="147.414" width="2" height="16" rx="1" transform="rotate(-45 34 147.414)" fill="#ABC1DB"/>
+<rect id="snowflake-part3" x="32" y="153" width="2" height="16" rx="1" transform="rotate(-90 32 153)" fill="#ABC1DB"/>
+</g>
+<g id="snowflake_2">
+<rect id="snowflake-part1_2" x="59" y="166" width="2" height="16" rx="1" fill="#ABC1DB"/>
+<rect id="snowflake-part2_2" x="65.3137" y="168" width="2" height="16" rx="1" transform="rotate(45 65.3137 168)" fill="#ABC1DB"/>
+<rect id="snowflake-part4_2" x="54" y="169.414" width="2" height="16" rx="1" transform="rotate(-45 54 169.414)" fill="#ABC1DB"/>
+<rect id="snowflake-part3_2" x="52" y="175" width="2" height="16" rx="1" transform="rotate(-90 52 175)" fill="#ABC1DB"/>
+</g>
+<g id="snowflake_3">
+<rect id="snowflake-part1_3" x="82" y="144" width="2" height="16" rx="1" fill="#ABC1DB"/>
+<rect id="snowflake-part2_3" x="88.3137" y="146" width="2" height="16" rx="1" transform="rotate(45 88.3137 146)" fill="#ABC1DB"/>
+<rect id="snowflake-part4_3" x="77" y="147.414" width="2" height="16" rx="1" transform="rotate(-45 77 147.414)" fill="#ABC1DB"/>
+<rect id="snowflake-part3_3" x="75" y="153" width="2" height="16" rx="1" transform="rotate(-90 75 153)" fill="#ABC1DB"/>
+</g>
+<g id="snowflake_4">
+<rect id="snowflake-part1_4" x="125" y="144" width="2" height="16" rx="1" fill="#ABC1DB"/>
+<rect id="snowflake-part2_4" x="131.314" y="146" width="2" height="16" rx="1" transform="rotate(45 131.314 146)" fill="#ABC1DB"/>
+<rect id="snowflake-part4_4" x="120" y="147.414" width="2" height="16" rx="1" transform="rotate(-45 120 147.414)" fill="#ABC1DB"/>
+<rect id="snowflake-part3_4" x="118" y="153" width="2" height="16" rx="1" transform="rotate(-90 118 153)" fill="#ABC1DB"/>
+</g>
+<g id="snowflake_5">
+<rect id="snowflake-part1_5" x="149" y="166" width="2" height="16" rx="1" fill="#ABC1DB"/>
+<rect id="snowflake-part2_5" x="155.314" y="168" width="2" height="16" rx="1" transform="rotate(45 155.314 168)" fill="#ABC1DB"/>
+<rect id="snowflake-part4_5" x="144" y="169.414" width="2" height="16" rx="1" transform="rotate(-45 144 169.414)" fill="#ABC1DB"/>
+<rect id="snowflake-part3_5" x="142" y="175" width="2" height="16" rx="1" transform="rotate(-90 142 175)" fill="#ABC1DB"/>
+</g>
+<g id="snowflake_6">
+<rect id="snowflake-part1_6" x="168" y="144" width="2" height="16" rx="1" fill="#ABC1DB"/>
+<rect id="snowflake-part2_6" x="174.314" y="146" width="2" height="16" rx="1" transform="rotate(45 174.314 146)" fill="#ABC1DB"/>
+<rect id="snowflake-part4_6" x="163" y="147.414" width="2" height="16" rx="1" transform="rotate(-45 163 147.414)" fill="#ABC1DB"/>
+<rect id="snowflake-part3_6" x="161" y="153" width="2" height="16" rx="1" transform="rotate(-90 161 153)" fill="#ABC1DB"/>
+</g>
+<g id="snowflake_7">
+<rect id="snowflake-part1_7" x="104" y="166" width="2" height="16" rx="1" fill="#ABC1DB"/>
+<rect id="snowflake-part2_7" x="110.314" y="168" width="2" height="16" rx="1" transform="rotate(45 110.314 168)" fill="#ABC1DB"/>
+<rect id="snowflake-part4_7" x="99" y="169.414" width="2" height="16" rx="1" transform="rotate(-45 99 169.414)" fill="#ABC1DB"/>
+<rect id="snowflake-part3_7" x="97" y="175" width="2" height="16" rx="1" transform="rotate(-90 97 175)" fill="#ABC1DB"/>
+</g>
+</g>
+</g>
+</svg>

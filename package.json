@@ -1,0 +1,31 @@
+{
+  "name": "suun",
+  "version": "1.0.0",
+  "description": "Suun is a simple weather app",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harounach/suun.git"
+  },
+  "keywords": [
+    "Suun",
+    "Weather"
+  ],
+  "author": "Haroun Ach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harounach/suun/issues"
+  },
+  "homepage": "https://github.com/harounach/suun#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

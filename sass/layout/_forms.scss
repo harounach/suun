@@ -1,0 +1,33 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
+
+// seach-form
+.search-form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  // form__section
+  &__section {
+    margin: 0 0 0 0.5rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // seach-form__input-control
+  &__input-control {
+    min-width: 200px;
+    height: 3rem;
+    background-color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 1.5rem;
+    padding-left: 1rem;
+
+    &:focus {
+      border-color: variables.$primary-color;
+    }
+  }
+}

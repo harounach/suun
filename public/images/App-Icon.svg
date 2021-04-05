@@ -1,0 +1,15 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="App-Icon">
+<g id="Sun">
+<circle id="sun" cx="78.5" cy="81" r="48" fill="#FFE168"/>
+<rect id="ray1" x="74.5" y="8" width="8" height="17" rx="4" fill="#FFE168"/>
+<rect id="ray2" x="127.521" y="26" width="8" height="17" rx="4" transform="rotate(45 127.521 26)" fill="#FFE168"/>
+<rect id="ray8" x="23.5" y="31.6569" width="8" height="17" rx="4" transform="rotate(-45 23.5 31.6569)" fill="#FFE168"/>
+<rect id="ray7" x="6" y="85" width="8" height="17" rx="4" transform="rotate(-90 6 85)" fill="#FFE168"/>
+<rect id="ray3" x="134.5" y="85" width="8" height="17" rx="4" transform="rotate(-90 134.5 85)" fill="#FFE168"/>
+</g>
+<g id="Cloud">
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M0 129H191.956C191.957 128.977 191.956 128.953 191.956 128.93C191.956 91.9654 161.991 62 125.027 62C100.441 62 78.951 75.2568 67.3155 95.0122C60.4296 90.3881 52.1419 87.6901 43.2241 87.6901C19.9842 87.6901 1.02364 106.013 0 129Z" fill="#C2C2C2"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,26 @@
+@use "../abstracts/mixins";
+
+.page {
+  // large tablet
+  @include mixins.large-tablet {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  // large tablet
+  @include mixins.large-tablet {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

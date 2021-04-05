@@ -1,0 +1,11 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Thunder">
+<g id="Cloud">
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M0 129H191.956C191.957 128.977 191.956 128.953 191.956 128.93C191.956 91.9654 161.991 62 125.027 62C100.441 62 78.951 75.2568 67.3155 95.0122C60.4296 90.3881 52.1419 87.6901 43.2241 87.6901C19.9842 87.6901 1.02364 106.013 0 129Z" fill="#C2C2C2"/>
+</g>
+<g id="lightning">
+<path id="lightning1" d="M53 152.5L61.5 129H78L65 144.5H78L54.5 169L61.5 152.5H53Z" fill="#F8EE0E"/>
+<path id="lightning2" d="M114 152.5L122.5 129H139L126 144.5H139L115.5 169L122.5 152.5H114Z" fill="#F8EE0E"/>
+</g>
+</g>
+</svg>
