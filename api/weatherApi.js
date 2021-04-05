@@ -31,7 +31,8 @@ exports.fetchWeatherData = async function (city) {
     params: {
       lat: lat,
       lon: lon,
-      exclude: "current,minutely,hourly,alerts",
+      exclude: "minutely,hourly,alerts",
+      units: "metric",
       appid: process.env.API_KEY,
     },
   });

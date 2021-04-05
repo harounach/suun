@@ -33,12 +33,11 @@ window.addEventListener("DOMContentLoaded", () => {
       this.cityName = document.querySelector(".city__name");
       this.cityError = document.querySelector(".city__error");
       this.todayDegrees = document.querySelector(".today__degrees");
-
-      console.log(this.cityName);
     },
 
     render: function (weatherData) {
       console.log(weatherData);
+      this.todayDegrees.textContent = `${weatherData["current"]["temp"]}°`;
     },
     showError: function () {},
   };
