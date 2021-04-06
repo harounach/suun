@@ -45,7 +45,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // Model
   const model = {
     defaultCity: "London",
-    searchCity: "London",
+    city: "London",
     imagesMap: {
       Thunderstorm: "./images/Thunderstorm.svg",
       Drizzle: "./images/Shower.svg",
@@ -83,6 +83,9 @@ window.addEventListener("DOMContentLoaded", () => {
       // show loader
       view.showLoader(true);
 
+      // save current city
+      this.setCity(city);
+
       model
         .getWeatherData(city)
         .then((response) => {
@@ -105,6 +108,20 @@ window.addEventListener("DOMContentLoaded", () => {
 
     formatTemperature: function (temp) {
       return Math.round(temp);
+    },
+
+    /**
+     * Get Current city
+     */
+    getCity: function () {
+      return model.city;
+    },
+
+    /**
+     * Set Current city
+     */
+    setCity: function (city) {
+      model.city = city;
     },
   };
 
@@ -151,6 +168,9 @@ window.addEventListener("DOMContentLoaded", () => {
      * @param {CurrentWeatherItem} current
      */
     populateToday: function (current) {
+      // Display city name
+      this.cityName.textContent = controller.getCity();
+
       const main = current.weather[0].main;
       const imageUrl = controller.chooseImage(main);
       this.todayImage.src = imageUrl;
