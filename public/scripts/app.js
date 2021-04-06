@@ -80,13 +80,20 @@ window.addEventListener("DOMContentLoaded", () => {
     },
 
     getData: function (city) {
+      // show loader
+      view.showLoader(true);
+
       model
         .getWeatherData(city)
         .then((response) => {
+          // hide loader
+          view.showLoader(false);
           view.hideError();
           view.render(response.data);
         })
         .catch((err) => {
+          // hide loader
+          view.showLoader(false);
           view.showError();
           console.log(err);
         });
@@ -111,6 +118,7 @@ window.addEventListener("DOMContentLoaded", () => {
       this.todayDegrees = document.querySelector(".today__degrees");
       this.todayImage = document.querySelector(".today__img");
       this.days = document.querySelectorAll(".day");
+      this.loader = document.querySelector(".loader");
 
       const self = this;
 
@@ -176,6 +184,15 @@ window.addEventListener("DOMContentLoaded", () => {
       this.days.forEach((day, index) => {
         this.populateDay(daily[index], day);
       });
+    },
+
+    /** */
+    showLoader: function (isLoading) {
+      if (isLoading) {
+        this.loader.classList.add("loader--show");
+      } else {
+        this.loader.classList.remove("loader--show");
+      }
     },
   };
 
