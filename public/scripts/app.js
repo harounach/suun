@@ -111,6 +111,14 @@ window.addEventListener("DOMContentLoaded", () => {
     },
 
     /**
+     *
+     * Format date
+     * @param {number} date
+     */
+    formatDate: function (date) {
+      return dayjs(date * 1000).format("ddd");
+    },
+    /**
      * Get Current city
      */
     getCity: function () {
@@ -194,6 +202,10 @@ window.addEventListener("DOMContentLoaded", () => {
       day.querySelector(".day__degrees").textContent = `${temperature}°`;
       // Set image
       day.querySelector(".day__img").src = imagesUrl;
+
+      // Set Date
+      const formattedDate = controller.formatDate(currentDay.dt);
+      day.querySelector(".day__name").textContent = formattedDate;
     },
 
     /**
