@@ -65,7 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
     },
     getWeatherData: async function (city) {
       return axios.post("/weather", {
-        city: "London",
+        city: city,
       });
     },
   };
@@ -74,12 +74,12 @@ window.addEventListener("DOMContentLoaded", () => {
   const controller = {
     init: function () {
       view.init();
-      this.getData();
+      this.getData("London");
     },
 
-    getData: function () {
+    getData: function (city) {
       model
-        .getWeatherData("London")
+        .getWeatherData(city)
         .then((response) => {
           view.render(response.data);
         })
@@ -154,11 +154,8 @@ window.addEventListener("DOMContentLoaded", () => {
      * @param {Array<WeatherItem>} daily
      */
     populateAllDays: function (daily) {
-      daily.forEach((weatherItem) => {});
-
       // populate days
       this.days.forEach((day, index) => {
-        // day.getElementsByClassName("day__name")[0].textContent = 55;
         this.populateDay(daily[index], day);
       });
     },
