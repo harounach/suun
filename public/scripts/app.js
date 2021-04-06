@@ -1,4 +1,25 @@
 window.addEventListener("DOMContentLoaded", () => {
+  /* Weather types */
+
+  /**
+   * Weather Item
+   *  @typedef {Object} WeatherItem
+   *
+   * @property {number} dt - Date time
+   * @property {number} temp - Temperature
+   * @property {Array<WeatherCondition>} weather - Weather conditions
+   *
+   */
+
+  /**
+   * Weather Condition
+   * @typedef {Object} WeatherCondition
+   *
+   * @property {number} id - Weather condition id
+   * @property {string} main - Weather condition name
+   * @property {string} description - Weather condition description
+   */
+
   // Model
   const model = {
     imagesMap: {
@@ -68,7 +89,9 @@ window.addEventListener("DOMContentLoaded", () => {
       console.log(weatherData);
 
       const current = weatherData["current"];
+      const daily = weatherData["daily"];
       this.populateToday(current);
+      this.populateDays(daily);
 
       // populate days
       // this.days.forEach((day) => {
@@ -84,6 +107,17 @@ window.addEventListener("DOMContentLoaded", () => {
       const formattedDegree = controller.formatDegrees(current["temp"]);
       this.todayDegrees.textContent = `${formattedDegree}°`;
     },
+
+    /**
+     * @param {WeatherItem} currentDay
+     * @param {HTMLDivElement} day
+     */
+    populateDay: function (currentDay, day) {},
+
+    /**
+     * @param {Array<DayWeather>} daily
+     */
+    populateDays: function (daily) {},
   };
 
   // init App
