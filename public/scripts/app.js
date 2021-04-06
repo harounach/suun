@@ -134,18 +134,14 @@ window.addEventListener("DOMContentLoaded", () => {
      * @param {HTMLDivElement} day
      */
     populateDay: function (currentDay, day) {
-      console.log(currentDay);
       // Get temperature
       const temperature = controller.formatTemperature(currentDay.temp.day);
       // Get image
       const main = currentDay.weather[0].main;
       const imagesUrl = controller.chooseImage(main);
 
-      console.log(imagesUrl);
-      console.log(day);
-
       // Set temperature
-      day.querySelector(".day__degrees").textContent = temperature;
+      day.querySelector(".day__degrees").textContent = `${temperature}°`;
       // Set image
       day.querySelector(".day__img").src = imagesUrl;
     },
