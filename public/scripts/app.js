@@ -44,6 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Model
   const model = {
+    showError: false,
     imagesMap: {
       Thunderstorm: "./images/Thunderstorm.svg",
       Drizzle: "./images/Shower.svg",
@@ -81,9 +82,11 @@ window.addEventListener("DOMContentLoaded", () => {
       model
         .getWeatherData(city)
         .then((response) => {
+          view.hideError();
           view.render(response.data);
         })
         .catch((err) => {
+          view.showError();
           console.log(err);
         });
     },
@@ -100,11 +103,24 @@ window.addEventListener("DOMContentLoaded", () => {
   // View
   const view = {
     init: function () {
+      this.searchForm = document.querySelector(".search-form");
+      this.searchInput = document.querySelector(".search-form__input-control");
       this.cityName = document.querySelector(".city__name");
       this.cityError = document.querySelector(".city__error");
       this.todayDegrees = document.querySelector(".today__degrees");
       this.todayImage = document.querySelector(".today__img");
       this.days = document.querySelectorAll(".day");
+
+      const self = this;
+
+      // Register search form listener
+      this.searchForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const searchInputValue = self.searchInput.value;
+        if (searchInputValue) {
+          controller.getData(searchInputValue);
+        }
+      });
     },
 
     render: function (weatherData) {
@@ -115,8 +131,13 @@ window.addEventListener("DOMContentLoaded", () => {
       this.populateToday(current);
       this.populateAllDays(daily);
     },
-    showError: function () {},
-
+    showError: function () {
+      console.log("Something Went wrong!!!");
+      this.cityError.classList.add("city__error--show-error");
+    },
+    hideError: function () {
+      this.cityError.classList.remove("city__error--show-error");
+    },
     /**
      * @param {CurrentWeatherItem} current
      */
