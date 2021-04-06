@@ -44,7 +44,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Model
   const model = {
-    showError: false,
+    defaultCity: "London",
+    searchCity: "London",
     imagesMap: {
       Thunderstorm: "./images/Thunderstorm.svg",
       Drizzle: "./images/Shower.svg",
@@ -75,7 +76,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const controller = {
     init: function () {
       view.init();
-      this.getData("London");
+      this.getData(model.defaultCity);
     },
 
     getData: function (city) {
