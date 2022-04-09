@@ -1,4 +1,3 @@
-require("dotenv").config();
 const { Router } = require("express");
 const router = Router();
 const weatherAPI = require("./weatherApi");
